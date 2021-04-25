@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginControllers.SignInFormController">
+   <children>
+      <JFXTextField focusColor="#3867d6" labelFloat="true" layoutX="30.0" layoutY="45.0" prefHeight="38.0" prefWidth="234.0" promptText="User" unFocusColor="BLACK">
+         <font>
+            <Font name="Roboto Medium" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXPasswordField focusColor="#3867d6" labelFloat="true" layoutX="30.0" layoutY="125.0" prefHeight="38.0" prefWidth="234.0" promptText="Password" unFocusColor="BLACK">
+         <font>
+            <Font name="Roboto Medium" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="78.0" layoutY="235.0" prefHeight="48.0" prefWidth="184.0" styleClass="btnSignIn" stylesheets="@../styles/StyleSheet.css" text="Sign In" textFill="#3867d6">
+         <font>
+            <Font name="Roboto Medium" size="25.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2961165048543689">
+               <stops>
+                  <Stop color="#3867d6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="277.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/User.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="277.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/password.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

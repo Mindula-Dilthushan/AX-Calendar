@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="460.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginControllers.LoginFormController">
+   <children>
+      <AnchorPane layoutX="19.0" layoutY="13.0" prefHeight="775.0" prefWidth="425.0" styleClass="main" stylesheets="@../styles/StyleSheet.css">
+         <children>
+            <AnchorPane fx:id="LoginMain" layoutX="43.0" layoutY="257.0" prefHeight="380.0" prefWidth="340.0" />
+            <Hyperlink fx:id="linkSignUp" layoutX="128.0" layoutY="635.0" onAction="#linkSignUpOnAction" text="Don't have an account ?" textFill="#3867d6" />
+            <Hyperlink fx:id="linkSignIn" layoutX="187.0" layoutY="635.0" onAction="#linkSignInOnAction" text="SignIn" textFill="#3867d6" />
+         </children></AnchorPane>
+      <ImageView fitHeight="311.0" fitWidth="286.0" layoutX="74.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../../assets/ax%20calendar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextArea editable="false" focusColor="#f1f2f6" layoutX="73.0" layoutY="721.0" prefHeight="48.0" prefWidth="315.0" text="                           Copyright © 2021 &#10;Alpha X Software Company All rights reserved" unFocusColor="#f1f2f6">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

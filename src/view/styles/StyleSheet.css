@@ -1,0 +1,9 @@
+/*login form*/
+
+.main{
+    -fx-background-color: #f1f2f6;
+    -fx-background-radius: 40 40 40 40;
+}
+.btnSignIn{
+    -fx-background-radius: 20 20 20 20;
+}
