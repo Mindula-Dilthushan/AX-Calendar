@@ -4,6 +4,14 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import util.Util;
+
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,6 +22,8 @@ public class SignInFormController {
     public JFXTextField txtUser;
     public JFXPasswordField txtPassword;
     public JFXButton btnSignIn;
+
+    Util util = new Util();
 
     public void btnSignInOnAction(ActionEvent actionEvent) {
         try {
@@ -26,13 +36,7 @@ public class SignInFormController {
 
             if (rs.next()) {
                 System.out.println("yes");
-//                URL resource = this.getClass().getResource("/view/DashBoardForm.fxml");
-//                Parent load = FXMLLoader.load(resource); // ALt + Enter
-//                Scene scene= new Scene(load);
-//                Stage stage= new Stage();
-//                stage.initStyle(StageStyle.TRANSPARENT);
-//                stage.setScene(scene);
-//                stage.show();
+                util.newFxmlFileLording(btnSignIn,"mainForms/DashBoardForm.fxml/");
             } else {
                 System.out.println("no");
             }

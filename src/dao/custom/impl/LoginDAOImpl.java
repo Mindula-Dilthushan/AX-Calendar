@@ -3,7 +3,6 @@ package dao.custom.impl;
 import dao.CrudUtil;
 import dao.custom.LoginDAO;
 import entity.Login;
-
 import java.sql.ResultSet;
 import java.util.List;
 
@@ -11,8 +10,7 @@ public class LoginDAOImpl implements LoginDAO {
 
     @Override
     public boolean save(Login login) throws Exception {
-        return CrudUtil.execute
-                ("INSERT INTO login VALUES(?,?)", login.getUsername(),login.getPassword());
+        return CrudUtil.execute("INSERT INTO login VALUES(?,?)", login.getUsername(),login.getPassword());
     }
 
     @Override
