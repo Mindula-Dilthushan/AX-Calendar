@@ -36,7 +36,7 @@ public class SignInFormController {
 
             if (rs.next()) {
                 System.out.println("yes");
-                util.newFxmlFileLording(btnSignIn,"mainForms/DashBoardForm.fxml/");
+                util.newFxmlFileLording(btnSignIn,"mainForms/DashBoardForm.fxml");
             } else {
                 System.out.println("no");
             }

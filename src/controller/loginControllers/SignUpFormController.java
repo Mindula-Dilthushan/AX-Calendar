@@ -37,7 +37,7 @@ public class SignUpFormController {
                 } catch (Exception e) {
                 }
                 System.out.println("Login Save");
-                util.newFxmlFileLording(btnSignUp,"mainForms/DashBoardForm.fxml/");
+                util.newFxmlFileLording(btnSignUp, "mainForms/DashBoardForm.fxml");
             }
             else {
                 System.out.println("Login Not Save");

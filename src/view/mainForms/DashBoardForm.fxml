@@ -1,8 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="780.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainFormsControllers.DashBoardFormController">
-
+<AnchorPane prefHeight="950.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainFormsControllers.DashBoardFormController">
+   <children>
+      <Pane layoutY="90.0" prefHeight="861.0" prefWidth="293.0" styleClass="outline" stylesheets="@../styles/StyleSheet.css">
+         <children>
+            <Circle fill="WHITE" layoutX="147.0" layoutY="98.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+            <JFXButton fx:id="btnPersonal" buttonType="RAISED" layoutX="45.0" layoutY="251.0" onAction="#btnPersonalOnAction" prefHeight="58.0" prefWidth="205.0" styleClass="btnPersonal" stylesheets="@../styles/StyleSheet.css" text="Personal" textFill="WHITE">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#eb3b5a" />
+                        <Stop color="#eb3b5a" offset="0.17391304347826086" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Roboto" size="27.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="95.0" layoutY="762.0" text="00:00">
+               <font>
+                  <Font name="Roboto Bold" size="40.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnWork" buttonType="RAISED" layoutX="44.0" layoutY="332.0" onAction="#btnWorkOnAction" prefHeight="58.0" prefWidth="205.0" styleClass="btnWork" stylesheets="@../styles/StyleSheet.css" text="Work" textFill="WHITE">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff15" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Roboto" size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnBirthday" buttonType="RAISED" layoutX="44.0" layoutY="415.0" onAction="#btnBirthdayOnAction" prefHeight="58.0" prefWidth="205.0" styleClass="btnBirthday" stylesheets="@../styles/StyleSheet.css" text="Birthdays" textFill="WHITE">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0070ff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Roboto" size="27.0" />
+               </font>
+            </JFXButton>
+            <Pane fx:id="lblPersonalPane" layoutY="250.0" prefHeight="55.0" prefWidth="10.0" styleClass="personalPane" stylesheets="@../styles/StyleSheet.css" />
+            <Pane fx:id="lblWorkPane" layoutY="332.0" prefHeight="55.0" prefWidth="10.0" styleClass="workPane" stylesheets="@../styles/StyleSheet.css" />
+            <Pane fx:id="lblBirthdayPane" layoutY="415.0" prefHeight="55.0" prefWidth="10.0" styleClass="birthdayPane" stylesheets="@../styles/StyleSheet.css" />
+            <ImageView fitHeight="150.0" fitWidth="100.0" layoutX="97.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/user_127px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="292.0" prefHeight="91.0" prefWidth="1308.0" styleClass="upPane" stylesheets="@../styles/StyleSheet.css" />
+      <Pane prefHeight="91.0" prefWidth="293.0" styleClass="leftUpPane" stylesheets="@../styles/StyleSheet.css" />
+      <AnchorPane layoutX="308.0" layoutY="114.0" prefHeight="819.0" prefWidth="1278.0" />
+   </children>
 </AnchorPane>

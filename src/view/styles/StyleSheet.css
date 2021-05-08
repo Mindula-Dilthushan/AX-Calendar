@@ -7,3 +7,32 @@
 .btnSignIn{
     -fx-background-radius: 20 20 20 20;
 }
+
+/*Dashbord*/
+.btnPersonal{
+    -fx-background-color: linear-gradient(to left top, #eb3b5a, #ee425c, #f2485e, #f54e60, #f85462, #fb616b, #fd6d75, #ff787e, #ff8c91, #ff9ea3, #ffb1b5, #ffc3c7);
+    -fx-background-radius: 15 15 15 15;
+}
+.btnWork{
+    -fx-background-radius: 15 15 15 15;
+    -fx-background-color: linear-gradient(to left top, #20bf6b, #21c56f, #23ca73, #24d077, #25d67b, #3bdc85, #4be190, #5ae79a, #76edac, #8ff4bd, #a7f9ce, #bfffde);;
+}
+.btnBirthday{
+    -fx-background-radius: 15 15 15 15;
+    -fx-background-color: linear-gradient(to left top, #3867d6, #3c6bda, #3f6ede, #4372e2, #4676e6, #5781ea, #668bee, #7496f2, #8fabf6, #aabffa, #c5d4fd, #e0e9ff);
+}
+.personalPane{
+    -fx-background-color: #eb3b5a;
+}
+.workPane{
+    -fx-background-color: #20bf6b;
+}
+.birthdayPane{
+    -fx-background-color: #3867d6;
+}
+.upPane{
+    -fx-background-color: linear-gradient(to right bottom, #9f9494, #928989, #867f7f, #7a7474, #6e6a6a, #666363, #5e5b5c, #565455, #4f4e4f, #494849, #434343, #3d3d3d);
+}
+.leftUpPane{
+    -fx-background-color: linear-gradient(to left top, #1e90ff, #3893ff, #4996ff, #569aff, #629dff, #4ba5ff, #30acff, #00b2ff, #00bbf5, #00c3e5, #00c8d0, #2bcbba);;
+}
