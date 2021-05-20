@@ -36,3 +36,6 @@
 .leftUpPane{
     -fx-background-color: linear-gradient(to left top, #1e90ff, #3893ff, #4996ff, #569aff, #629dff, #4ba5ff, #30acff, #00b2ff, #00bbf5, #00c3e5, #00c8d0, #2bcbba);;
 }
+.outline{
+    -fx-border-color: black;
+}
