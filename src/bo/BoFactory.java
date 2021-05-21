@@ -1,5 +1,6 @@
 package bo;
 
+import bo.custom.impl.BirthdayBOImpl;
 import bo.custom.impl.LoginBOImpl;
 
 public class BoFactory {
@@ -15,13 +16,15 @@ public class BoFactory {
     }
 
     public enum BOType {
-        LOGIN
+        LOGIN,BIRTHDAY
     }
 
     public <T> T getBo(BOType type) {
         switch (type) {
             case LOGIN:
                 return (T) new LoginBOImpl();
+            case BIRTHDAY:
+                return (T) new BirthdayBOImpl();
             default:
                 return null;
         }

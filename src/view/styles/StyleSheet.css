@@ -50,3 +50,10 @@
 .dateSavePane{
     -fx-background-color: #f3a683
 }
+/*birthday Form*/
+.lblBirthDayName{
+    -fx-text-fill : #575fcf
+}
+.saveBirthPane{
+    -fx-background-color: linear-gradient(to left bottom, #5cd5ff, #63d7ff, #69d8ff, #6fdaff, #75dbff, #7dddff, #85dffe, #8de1fe, #99e4fe, #a3e6fd, #aee9fd, #b8ebfd);
+}
