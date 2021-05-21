@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="820.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainFormsControllers.HomeFormController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="-23.0" prefHeight="820.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="49.0" layoutY="145.0" prefHeight="200.0" prefWidth="1182.0" styleClass="dateSavePane" stylesheets="@../styles/StyleSheet.css">
+               <children>
+                  <JFXDatePicker fx:id="datePicker" defaultColor="#8d3306" layoutX="51.0" layoutY="79.0" prefHeight="43.0" prefWidth="184.0" promptText="Date" />
+                  <JFXButton fx:id="btnSaveDate" buttonType="RAISED" layoutX="523.0" layoutY="82.0" onAction="#btnSaveDateOnAction" prefHeight="38.0" prefWidth="137.0" text="Save" textFill="WHITE">
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="#6b6b6b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="lblDateDesc" layoutX="731.0" layoutY="88.0" prefHeight="24.0" prefWidth="337.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="431.0" layoutY="40.0" text="WELCOME AX CALENDAR">
+               <font>
+                  <Font name="Roboto" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

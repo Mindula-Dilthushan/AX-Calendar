@@ -4,9 +4,11 @@ import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.effect.Bloom;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
 import java.net.URL;
 
 public class Util {
@@ -29,5 +31,15 @@ public class Util {
             stage.show();
         }catch (Exception e){
         }
+    }
+    public void btnEffect(JFXButton btn) {
+        btn.setOnMouseEntered(e -> {
+            btn.setEffect(new Bloom(0));
+//            btn.setStyle("-fx-border-color: #ffffff;");
+        });
+        btn.setOnMouseExited(e -> {
+            btn.setEffect(new Bloom(1));
+            btn.setStyle("-fx-background-color: transparent;");
+        });
     }
 }

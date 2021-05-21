@@ -9,6 +9,10 @@
 }
 
 /*Dashbord*/
+.btnHome{
+    -fx-background-color: linear-gradient(to left, #ffa801, #ffad18, #ffb126, #ffb631, #ffba3b, #ffbd45, #fec14e, #fec457, #fdc762, #fcca6c, #fbcd76, #fad080);
+    -fx-background-radius: 15 15 15 15;
+}
 .btnPersonal{
     -fx-background-color: linear-gradient(to left top, #eb3b5a, #ee425c, #f2485e, #f54e60, #f85462, #fb616b, #fd6d75, #ff787e, #ff8c91, #ff9ea3, #ffb1b5, #ffc3c7);
     -fx-background-radius: 15 15 15 15;
@@ -20,6 +24,9 @@
 .btnBirthday{
     -fx-background-radius: 15 15 15 15;
     -fx-background-color: linear-gradient(to left top, #3867d6, #3c6bda, #3f6ede, #4372e2, #4676e6, #5781ea, #668bee, #7496f2, #8fabf6, #aabffa, #c5d4fd, #e0e9ff);
+}
+.homePane{
+    -fx-background-color: #ffa801;
 }
 .personalPane{
     -fx-background-color: #eb3b5a;
@@ -38,4 +45,8 @@
 }
 .outline{
     -fx-border-color: black;
+}
+/*lordAnchor*/
+.dateSavePane{
+    -fx-background-color: #f3a683
 }
