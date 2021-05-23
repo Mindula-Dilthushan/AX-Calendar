@@ -1,3 +1,5 @@
+//Mindula Dilthushan
+//AX Calendar v1.0.0
 package controller.mainFormsControllers;
 
 import com.jfoenix.controls.JFXButton;
@@ -14,7 +16,6 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import util.Util;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -23,11 +24,9 @@ import java.util.Optional;
 public class DashBoardFormController {
 
     public Pane lblWorkPane,lblBirthdayPane,lblPersonalPane;
-    public JFXButton btnPersonal,btnWork,btnBirthday;
+    public JFXButton btnPersonal,btnWork,btnBirthday,btnExit,btnHome;
     public Label lblTime,lblDate;
     public AnchorPane lordAnchor;
-    public JFXButton btnExit;
-    public JFXButton btnHome;
     public Pane lblHome;
 
     //Property Injection

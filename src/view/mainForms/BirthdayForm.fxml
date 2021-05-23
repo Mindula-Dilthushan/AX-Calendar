@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -17,13 +20,13 @@
                   <Font name="Roboto Bold" size="36.0" />
                </font>
             </Label>
-            <AnchorPane fx:id="anchorBirthMain" layoutX="15.0" layoutY="150.0" prefHeight="660.0" prefWidth="1250.0" style="-fx-border-color: black;" />
+            <AnchorPane fx:id="anchorBirthMain" layoutX="18.0" layoutY="146.0" prefHeight="660.0" prefWidth="1250.0" style="-fx-border-color: black;" />
             <Separator layoutX="12.0" layoutY="73.0" prefHeight="0.0" prefWidth="1250.0" />
-            <JFXButton fx:id="btnSaveBirth" buttonType="RAISED" layoutX="15.0" layoutY="90.0" onAction="#btnSaveBirthOnAction" prefHeight="38.0" prefWidth="145.0" text="Save ">
+            <JFXButton fx:id="btnSaveBirth" buttonType="RAISED" contentDisplay="CENTER" layoutX="65.0" layoutY="80.0" onAction="#btnSaveBirthOnAction" prefHeight="58.0" prefWidth="58.0" style="-fx-background-radius: 70;" text=" ">
                <ripplerFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
-                        <Stop color="#0005ff" />
+                        <Stop color="#ff8585" />
                         <Stop color="WHITE" offset="1.0" />
                      </stops>
                   </LinearGradient>
@@ -31,12 +34,21 @@
                <font>
                   <Font name="Roboto" size="20.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/save_64px.png" />
+                     </image></ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnSearchBirth" buttonType="RAISED" layoutX="244.0" layoutY="90.0" onAction="#btnSearchBirthOnAction" prefHeight="38.0" prefWidth="145.0" text="Search">
+            <JFXButton fx:id="btnSearchBirth" buttonType="RAISED" contentDisplay="CENTER" layoutX="163.0" layoutY="80.0" onAction="#btnSearchBirthOnAction" prefHeight="58.0" prefWidth="64.0" style="-fx-background-radius: 70;" text=" ">
                <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
+                  <LinearGradient endX="1.0" startY="1.0">
                      <stops>
-                        <Stop color="#0005ff" />
+                        <Stop color="#7e83ff" />
                         <Stop color="WHITE" offset="1.0" />
                      </stops>
                   </LinearGradient>
@@ -44,6 +56,16 @@
                <font>
                   <Font name="Roboto" size="20.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/search_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
          </children>
       </AnchorPane>

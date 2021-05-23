@@ -46,6 +46,10 @@
 .outline{
     -fx-border-color: black;
 }
+.mainPaneLbl{
+    -fx-background-color: #575fcf;
+    -fx-background-radius: 20;
+}
 /*lordAnchor*/
 .dateSavePane{
     -fx-background-color: #f3a683
@@ -55,5 +59,6 @@
     -fx-text-fill : #575fcf
 }
 .saveBirthPane{
+    -fx-background-radius: 20;
     -fx-background-color: linear-gradient(to left bottom, #5cd5ff, #63d7ff, #69d8ff, #6fdaff, #75dbff, #7dddff, #85dffe, #8de1fe, #99e4fe, #a3e6fd, #aee9fd, #b8ebfd);
 }

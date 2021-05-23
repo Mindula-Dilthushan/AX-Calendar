@@ -101,9 +101,9 @@
       </Pane>
       <Pane layoutX="292.0" prefHeight="91.0" prefWidth="1308.0" styleClass="upPane" stylesheets="@../styles/StyleSheet.css">
          <children>
-            <Label fx:id="lblDate" layoutX="909.0" layoutY="21.0" text="00:00" textFill="WHITE">
+            <Label fx:id="lblDate" layoutX="1028.0" layoutY="25.0" text="00:00" textFill="#ed4c67">
                <font>
-                  <Font name="Roboto Bold" size="40.0" />
+                  <Font name="Roboto Bold" size="30.0" />
                </font>
             </Label>
             <JFXButton fx:id="btnExit" buttonType="RAISED" contentDisplay="CENTER" layoutX="1227.0" layoutY="17.0" onAction="#btnExitOnAction" text=" ">
@@ -126,11 +126,17 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
+            <Pane layoutX="488.0" layoutY="13.0" prefHeight="65.0" prefWidth="333.0" styleClass="mainPaneLbl" stylesheets="@../styles/StyleSheet.css" />
+            <Label layoutX="542.0" layoutY="20.0" text="AX Calander" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="40.0" />
+               </font>
+            </Label>
          </children></Pane>
       <Pane prefHeight="91.0" prefWidth="293.0" styleClass="leftUpPane" stylesheets="@../styles/StyleSheet.css" />
       <AnchorPane fx:id="lordAnchor" layoutX="307.0" layoutY="110.0" prefHeight="820.0" prefWidth="1280.0">
          <children>
-            <AnchorPane layoutX="8.0" prefHeight="820.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane layoutX="-1.0" prefHeight="820.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children></AnchorPane>
    </children>
 </AnchorPane>
